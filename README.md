@@ -1,40 +1,34 @@
-Prototype Development Report
-Overview
-This report outlines the steps taken to create the prototype, the resources used, and the challenges faced during the development process.
-
-Steps Taken to Create the Prototype
-Project Planning
-
-Defined the project requirements and goals.
-Sketched wireframes for the homepage and quiz page.
-Setting Up the Environment
-
-Created the project structure (index.html, quiz.html, style.css, script.js).
-Linked external stylesheets and scripts.
-Developing the Homepage
-
-Added a banner image at the top.
-Used Flexbox to align the homepage image (left) and quiz button (right).
-Ensured responsiveness for different screen sizes.
-Building the Quiz Page
-
-Integrated the Quiz API to fetch random questions.
-Displayed questions dynamically with buttons for multiple-choice answers.
-Implemented logic to track correct and incorrect answers.
-Styling with CSS
-
-Used Flexbox to center the quiz container.
-Designed an interactive "Start Quiz" button with hover effects.
-Applied responsive styles for mobile compatibility.
-Resources Used
-HTML, CSS, JavaScript – Core technologies for building the prototype.
-QuizAPI.io – Used to fetch random quiz questions.
-MDN Web Docs – For CSS Flexbox and JavaScript functions.
-Google Fonts & Font Awesome – For typography and icons.
-VS Code & Live Server – For coding and real-time preview.
-Challenges Faced
-Quiz Alignment Issue – Initially, the quiz container was aligning to the left instead of the center. This was fixed using margin: 0 auto; and display: flex; justify-content: center;.
-API Integration – Understanding the structure of API responses and handling missing data fields.
-Responsiveness – Adjusting layout and image sizes to fit different screen sizes.
-Conclusion
-This prototype successfully implements a functional quiz site with a well-structured layout and dynamic question fetching. Future improvements could include a score-tracking system, timer, and more quiz categories.
+Capstone Project Report – Tropical Fusion Quiz
+🧠 Project Overview
+This web application is a quiz platform that fetches random questions using the QuizAPI.io API. It allows users to test their knowledge by clicking a button to receive a new question and choosing an answer from multiple options.
+⚙ Technologies Used
+HTML5 for structuring content
+CSS3 for styling the layout and making the app responsive
+JavaScript (ES6) for interactivity and API integration
+Fetch API for asynchronous operations (no page reloads)
+QuizAPI.io as the external data source for quiz questions
+🧱 Project Structure
+index.html – Main HTML page containing the homepage and quiz section
+style.css – Stylesheet for layout, typography, and responsiveness
+script.js – JavaScript file that handles:
+Fetching questions from the API
+Displaying questions and answers dynamically
+Tracking correct and incorrect answers
+Updating the UI based on user interactions
+🧩 External Resources
+QuizAPI.io – Free quiz API used to fetch questions
+MDN Web Docs – Reference for JavaScript and Fetch API
+Google Fonts – Typography inspiration (optional)
+🚧 Challenges Faced
+Handling the API format: The API returns answers as key-value pairs, and some answers are null. A filter had to be added to show only valid answers.
+Dynamic DOM updates: Creating buttons on the fly and attaching event listeners required careful handling to avoid inline event attributes.
+Responsive design: Ensuring the layout adapted well to small screens involved testing different flex settings and widths.
+Page navigation: Originally built with two HTML files. It was later restructured into a single-page application to meet requirements.
+💡 Lessons Learned
+How to fetch and display data from a third-party API
+Importance of separating structure, style, and behavior (HTML/CSS/JS)
+Better practices in DOM manipulation and event handling
+Building a fully functional interactive web app without page reloads
+ 
+Quiz API
+Test your knowledge or easily embed a quiz on your website with the Quiz API
